@@ -85,6 +85,7 @@ function Login(props) {
                         <small>Forgot Password?</small>
                       </a>
                     </span>
+                    
                     <Button
                       style={{ float: "right", width: 120 }}
                       color="danger"
@@ -105,7 +106,13 @@ function Login(props) {
                       {loading ? "Loading... " : "Submit"}
                       
                     </Button>
-                    
+                    <br>
+                    </br>
+                    <br>
+                    </br>
+                    <br>
+                    </br>
+                    <a href="/auth/google">Sign In with Google</a>
                   </FormGroup>
                 </fieldset>
               </Form>
@@ -147,7 +154,11 @@ function Login(props) {
           }
         `}
       </style>
+
+
+      
     </Container>
+    
   );
 }
 
