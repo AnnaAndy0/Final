@@ -2,10 +2,11 @@
   "name": "restaurant-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
+   "scripts": {
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js -p $PORT",
+    "heroku-postbuild": "next build"
   },
   "dependencies": {
     "@apollo/client": "^3.2.4",
